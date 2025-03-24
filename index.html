@@ -20,6 +20,7 @@
             align-items: center;
             min-height: 100vh;
             overflow-x: hidden;   /* Prevent horizontal scrolling */
+            overflow-y: hidden;
             width: 100vw;         /* Ensure full viewport width */
             box-sizing: border-box;
             /** background-image: url('background.jpg');
@@ -76,6 +77,9 @@
             max-height: 200px;  /* Set a fixed height */
             overflow-y: auto;   /* Enable vertical scrolling */
             padding-right: 10px; /* Add space to prevent scrollbar overlap */
+        }
+        .button-grid::-webkit-scrollbar {
+         display: none;  /* Hide scrollbar in Chrome, Edge, Safari */
         }
         button {
             padding: 10px 10px;
