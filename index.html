@@ -87,13 +87,17 @@
         }
         button {
             padding: 10px 10px;
-            width: 50px;
             background-color: #baa76d;
             color: white;
             border: none;
             border-radius: 5px;
             position: relative;
             font-family: 'BAKRSIGN', sans-serif;
+            width: 150px;      /* Fixed width */
+            box-sizing: border-box;
+            overflow: hidden;  /* Prevent overflow of long text */
+            white-space: nowrap; /* Prevent text wrapping */
+            text-overflow: ellipsis; /* Show '...' if text overflows */
         }
         
         .social-media-container {
