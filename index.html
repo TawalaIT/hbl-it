@@ -98,7 +98,14 @@
             overflow: hidden;  /* Prevent overflow of long text */
             white-space: nowrap; /* Prevent text wrapping */
             text-overflow: ellipsis; /* Show '...' if text overflows */
-        }
+            cursor: pointer;
+            transition: background-color 0.3s;  /* Smooth transition */
+            }
+
+            button:active {
+            background-color: #755c42; /* Color change on click */
+            }
+            
         
         .social-media-container {
             position: absolute;
